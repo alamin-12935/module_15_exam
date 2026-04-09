@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class M15_exam extends StatefulWidget {
   const M15_exam({super.key});
@@ -80,29 +81,42 @@ class _M15_examState extends State<M15_exam> {
               height: 400,
             ),
           ),
-          SizedBox(height: 30,),
-          Divider(),
+          Row(
+            children: const [
+              Expanded(child: Divider()),
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 8),
+                child: Text("Interests",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 17),),
+              ),
+              Expanded(child: Divider()),
+            ],
+          ),
+          SizedBox(height: 30.h),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
             Card(
               child: Container(
-                height: 220,
-                width: 240,
+                child: Column(
+                  children: [
+                    Image.asset('asset/camra.jpg',height: 100,width: 200,)
+                  ],
+                ),
+                height: 220.h,
+                width: 160.w,
                 decoration: BoxDecoration(
                     color: Colors.white,
-                  borderRadius: BorderRadiusGeometry.circular(20)
+                  borderRadius: BorderRadius.circular(20.r)
                 ),
               ),
             ),
             Card(
               child: Container(
-                height: 220,
-                width: 240,
+                height: 220.h,
+                width: 160.w,
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadiusGeometry.circular(20),
-
+                  borderRadius: BorderRadius.circular(20.r),
                 ),
               ),
             )
