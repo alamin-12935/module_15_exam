@@ -40,63 +40,77 @@ class _M15_examState extends State<M15_exam> {
                     ),
                     Text(
                       'Flutter Developer',
-                      style: TextStyle(fontSize: 14.sp, color: Colors.grey),
+                      style: TextStyle(fontSize: 12.sp, color: Colors.grey),
                     ),
                     SizedBox(height: 14.h),
                     Text(
                       'Passionate about creating user-friendly and engaging digital experiences.',
                       textAlign: TextAlign.center,
-                      style: TextStyle(color: Colors.grey.shade800),
+                      style: TextStyle(color: Colors.grey.shade600),
                     ),
                     Divider(),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         SizedBox(width: 20),
-                        Icon(Icons.mail, size: 22),
+                        Icon(Icons.mail, size: 20),
                         SizedBox(width: 10),
                         Text(
                           'john.deo@example.com',
-                          style: TextStyle(fontSize: 18),
+                          style: TextStyle(fontSize: 16,color: Colors.grey.shade700),
                         ),
                       ],
                     ),
                     Row(
                       children: [
                         SizedBox(width: 20),
-                        Icon(Icons.phone, size: 22),
+                        Icon(Icons.phone, size: 20),
                         SizedBox(width: 10),
-                        Text('+123 456 7890', style: TextStyle(fontSize: 18)),
+                        Text('+123 456 7890', style: TextStyle(fontSize: 16,color: Colors.grey.shade700)),
                       ],
                     ),
                     Row(
                       children: [
                         SizedBox(width: 45.w, height: 70.h),
-                        Card(
-                          color: Colors.blue,
-                          child: TextButton(
-                            onPressed: () {},
-                            child: Text(
-                              'Follow',
-                              style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 15,
+                          SizedBox(
+                            width: 120.w,
+                            height: 25.h,
+                            child: ElevatedButton(
+                              onPressed: () {},style: ElevatedButton.styleFrom(
+                              elevation: 1,
+                              backgroundColor: Colors.blue,
+                                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5))),
+                              child: Text(
+                                'Follow',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 15,
+                                ),
                               ),
                             ),
                           ),
-                        ),
-                        Card(
-                          child: TextButton(
-                            onPressed: () {},
-                            child: Text(
-                              'Message',
-                              style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 15,
+                          SizedBox(
+                            width: 10,
+                          ),
+                          SizedBox(
+                            width: 120.w,
+                            height: 25.h,
+                            child: ElevatedButton(
+                              onPressed: () {},style: ElevatedButton.styleFrom(
+
+                              elevation: 1,
+                              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5))
+                            ),
+                              child: Text(
+                                'Message',
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 15,
+                                ),
                               ),
                             ),
                           ),
-                        ),
+
                       ],
                     ),
                   ],
@@ -150,7 +164,7 @@ class _M15_examState extends State<M15_exam> {
                                 children: [
                                   Text(
                                     'Travel',
-                                    style: TextStyle(fontSize: 18.sp),
+                                    style: TextStyle(fontSize: 18),
                                   ),
                                 ],
                               ),
@@ -161,15 +175,17 @@ class _M15_examState extends State<M15_exam> {
                             ),
                             SizedBox(height: 15.h),
                             SizedBox(
-                              width: double.infinity.w,
+                              width: 140.w,
+                              height: 25.h,
                               child: ElevatedButton(
                                 onPressed: () {},
                                 style: ElevatedButton.styleFrom(
+                                  elevation: 0,
                                   shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(10.r),
+                                    borderRadius: BorderRadius.circular(5.r),
                                   ),
                                 ),
-                                child: Text('View More'),
+                                child: Text('View More',style: TextStyle(color: Colors.blue),),
                               ),
                             ),
                           ],
@@ -208,7 +224,7 @@ class _M15_examState extends State<M15_exam> {
                                 children: [
                                   Text(
                                     'Photography',
-                                    style: TextStyle(fontSize: 18.sp),
+                                    style: TextStyle(fontSize: 18),
                                   ),
                                 ],
                               ),
@@ -219,15 +235,17 @@ class _M15_examState extends State<M15_exam> {
                             ),
                             SizedBox(height: 15.h),
                             SizedBox(
-                              width: double.infinity.w,
+                              width: 140.w,
+                              height: 25.h,
                               child: ElevatedButton(
                                 onPressed: () {},
                                 style: ElevatedButton.styleFrom(
+                                  elevation: 0,
                                   shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(10.r),
+                                    borderRadius: BorderRadius.circular(5.r),
                                   ),
                                 ),
-                                child: Text('View More'),
+                                child: Text('View More',style: TextStyle(color: Colors.blue),),
                               ),
                             ),
                           ],
