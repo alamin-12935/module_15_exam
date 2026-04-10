@@ -34,19 +34,19 @@ class _M15_examState extends State<M15_exam> {
                     Text(
                       'John Doe',
                       style: TextStyle(
-                        fontSize: 20.sp,
+                        fontSize: 20,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
                     Text(
                       'Flutter Developer',
-                      style: TextStyle(fontSize: 12.sp, color: Colors.grey),
+                      style: TextStyle(fontSize: 12.sp, color: Colors.grey.shade700),
                     ),
                     SizedBox(height: 14.h),
                     Text(
                       'Passionate about creating user-friendly and engaging digital experiences.',
                       textAlign: TextAlign.center,
-                      style: TextStyle(color: Colors.grey.shade600),
+                      style: TextStyle(color: Colors.grey.shade800),
                     ),
                     Divider(),
                     Row(
@@ -57,7 +57,7 @@ class _M15_examState extends State<M15_exam> {
                         SizedBox(width: 10),
                         Text(
                           'john.deo@example.com',
-                          style: TextStyle(fontSize: 16,color: Colors.grey.shade700),
+                          style: TextStyle(fontSize: 16,color: Colors.grey.shade800),
                         ),
                       ],
                     ),
@@ -66,7 +66,7 @@ class _M15_examState extends State<M15_exam> {
                         SizedBox(width: 20),
                         Icon(Icons.phone, size: 20),
                         SizedBox(width: 10),
-                        Text('+123 456 7890', style: TextStyle(fontSize: 16,color: Colors.grey.shade700)),
+                        Text('+123 456 7890', style: TextStyle(fontSize: 16,color: Colors.grey.shade800)),
                       ],
                     ),
                     Row(
