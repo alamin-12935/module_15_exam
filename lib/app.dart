@@ -14,8 +14,8 @@ class Myapp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Travel',
         routes: {
-          '/': (context) => M15_exam(),
-          '/M15_exam': (context) => M15_exam(),
+          '/': (context) => test(),
+          '/M15_exam': (context) => test(),
         },
         initialRoute: '/M15_exam',
       ),
